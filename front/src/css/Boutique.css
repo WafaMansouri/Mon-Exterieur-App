@@ -1,0 +1,87 @@
+#boutique {
+  position: absolute;
+  width: 100%;
+  /* top: 7rem; */
+  background-color: #f8f8f8;
+}
+.boutique-header {
+  height: 24rem;
+  width: 100%;
+  background-image: linear-gradient(
+    rgba(48, 19, 19, 0.8),
+    rgba(48, 19, 19, 0.8)
+  );
+  overflow: hidden;
+}
+.boutique-header img {
+  filter: brightness(0.6);
+}
+.boutique-header h1 {
+  color: #7daf3f;
+  font-size: 4.7rem;
+  line-height: 6.1rem;
+  position: absolute;
+  top: 13.8rem;
+  z-index: 10;
+  margin-left: 10rem;
+}
+.products {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+main.boutique-main {
+  width: 80%;
+  margin: 2rem auto;
+  display: flex;
+}
+aside .boutique-aside-1 {
+  min-width: 26rem;
+  height: 36.9rem;
+  border: 1px solid #e2e2e2;
+  background-color: white;
+}
+
+aside .boutique-aside-1 li {
+  border: 1px solid #f1eeee;
+  height: 6rem;
+  padding: 2rem 3rem;
+}
+aside .boutique-aside-1 h2 {
+  height: 7rem;
+  font-size: 2rem;
+  line-height: 2.6rem;
+  text-transform: uppercase;
+  padding: 2rem 3rem;
+}
+
+aside .boutique-aside-2 {
+  min-width: 26rem;
+  height: 47.8rem;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(77, 48, 43),
+    rgb(101, 61, 54)
+  );
+  overflow: hidden;
+  color: white;
+  padding: 3rem 2rem;
+  position: relative;
+}
+aside .boutique-aside-2 span {
+  display: block;
+  font-size: 27rem;
+  font-weight: 700;
+  color: #7daf3f;
+  transform: translate(-69px, -41px) rotate(-15deg);
+}
+aside .boutique-aside-2 h3 {
+  font-size: 2rem;
+  line-height: 2.6rem;
+  margin: 2rem 0;
+}
+aside .boutique-aside-2 img.arrow {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+}

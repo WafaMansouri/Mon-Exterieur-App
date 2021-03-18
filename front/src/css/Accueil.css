@@ -1,0 +1,293 @@
+#accueil {
+  position: relative;
+  width: 100%;
+  top: 7rem;
+}
+.header-home {
+  position: fixed;
+  top: 7rem;
+  width: 100%;
+  background-color: #f8f8f8;
+}
+.header-home-main-image {
+  /* position: fixed; */
+  top: 0;
+  height: 28rem;
+  width: 100%;
+}
+.header-home-images {
+  width: 80%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+}
+.header-home-images img {
+  width: 20rem;
+}
+.config-espace {
+  background-color: #4d302b;
+  color: white;
+  width: 80%;
+  height: 17rem;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: 11rem 11.4rem auto 10rem;
+  padding: 41px;
+  overflow: hidden;
+}
+.config-espace img {
+  margin: 20px auto;
+}
+.config-espace img.config-icon {
+  width: 7rem;
+  height: 4.7rem;
+}
+.config-espace h1 {
+  font-size: 3.3rem;
+}
+.config-espace > span {
+  font-size: 27rem;
+  font-weight: 700;
+  line-height: 1rem;
+  color: #7daf3f;
+  transform: translate(-78px, 33px) rotate(-17deg);
+}
+#accueil main {
+  position: absolute;
+  top: 46.5rem;
+  background-color: #f8f8f8;
+  width: 100%;
+  border: none;
+}
+.nos-realisations-section {
+  margin: 10rem 0 0 10rem;
+  height: 56rem;
+  position: relative;
+  background-color: #f8f8f8;
+}
+.nos-realisations-section h1 {
+  color: #1f1f1f;
+  margin-bottom: 2.5rem;
+}
+.nos-realisations-box {
+  border: 1px solid #e2e2e2;
+  width: 44.4rem;
+  height: 42.5rem;
+  padding: 37px;
+  position: relative;
+  z-index: 14;
+  background-color: white;
+}
+.nos-realisations-section:hover .nos-realisations-box {
+  background-color: #7daf3f;
+  border-color: #7daf3f;
+}
+.nos-realisations-image {
+  position: absolute;
+  right: 0;
+  top: 0;
+  overflow: hidden;
+}
+.nos-realisations-image > div > img {
+  width: 90.8rem;
+  transition: all 0.3s ease-out;
+}
+.nos-realisations-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(46rem, 25rem);
+  opacity: 0;
+  /* transition: all 0.3s ease-in; */
+}
+.nos-realisations-section:hover p,
+.nos-realisations-section:hover h2 {
+  color: white;
+}
+.nos-realisations-section:hover .nos-realisations-image div > img {
+  transform: scale(1.1);
+}
+.nos-realisations-section:hover .nos-realisations-icon {
+  opacity: 1;
+}
+.nos-realisations-description p {
+  height: 18rem;
+  /* width: 35.9rem; */
+  overflow: hidden;
+}
+.nos-realisations-description h2 {
+  color: #1f1f1f;
+  margin-bottom: 30px;
+}
+.nos-realisations-description p {
+  color: #504e4e;
+  font: normal normal normal 14px/25px "PT Sans";
+}
+.nos-realisations-box .arrows {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border: 1px solid #e2e2e2;
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+.nos-realisations-box .arrows img {
+  margin: 1.25rem 1.5rem;
+  cursor: pointer;
+}
+.carousel {
+  /* visibility: hidden; */
+  display: none;
+  transition: all 0.5s ease;
+}
+.carousel .dot {
+  cursor: pointer;
+  height: 9px;
+  width: 9px;
+  margin: 0 2px;
+  /* background-color: #bbb; */
+  border-radius: 50%;
+  border: 1px solid #b7b7b7;
+  display: inline-block;
+  /* transition: background-color 0.6s ease; */
+}
+.nos-realisations-section:hover .carousel {
+  display: block;
+  /* visibility: visible; */
+}
+section.notice-installation {
+  width: 85%;
+  display: grid;
+  grid-template-columns: 35.2rem 35.2rem 35.2rem;
+  grid-gap: 10px;
+  margin: 20px auto;
+}
+section.notice-installation div:first-child {
+  background-color: #4d302b;
+  padding: 60px 34px;
+  height: 35.2rem;
+  /* overflow: hidden; */
+}
+section.notice-installation div:first-child h1 {
+  color: #7daf3f;
+  font: normal normal bold 33px/43px "PT Sans";
+  margin-bottom: 3.55rem;
+  transition: transform 0.3s;
+}
+section.notice-installation div:first-child p {
+  font: normal normal normal 14px/25px "PT Sans";
+  transition: transform 0.3s;
+}
+section.notice-installation div:first-child {
+  color: white;
+}
+.notice-installation-savoir-plus {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 70px;
+  transition: transform 0.3s;
+  visibility: hidden;
+}
+.notice-installation-savoir-plus span {
+  font: normal normal medium 1.6rem/3.1rem Helvetica, sans-serif;
+  text-transform: uppercase;
+}
+.notice-installation-savoir-plus img {
+  cursor: pointer;
+}
+section.notice-installation div:first-child:hover {
+  background-color: #7daf3f;
+}
+section.notice-installation div:first-child:hover h1 {
+  color: #4d302b;
+}
+section.notice-installation div:first-child:hover h1,
+section.notice-installation div:first-child:hover p,
+section.notice-installation
+  div:first-child:hover
+  .notice-installation-savoir-plus {
+  transform: translateY(-2rem);
+}
+section.notice-installation
+  div:first-child:hover
+  .notice-installation-savoir-plus {
+  visibility: visible;
+}
+section.notice-installation div {
+  overflow: hidden;
+}
+section.notice-installation img:not([src="/icons/arrow-left-line.svg"]):hover {
+  transform: scale(1.1);
+}
+section.notice-installation img {
+  transition: all 0.2s;
+}
+section.notre-magasin {
+  display: flex;
+}
+section.notre-magasin h1 {
+  font: normal normal bold 33px/43px "PT Sans";
+  margin-left: 3rem;
+}
+.notre-magasin-description {
+  border: 1px solid #e2e2e2;
+  background-color: white;
+  height: 38.5rem;
+  overflow: hidden;
+  transform: translate(-169px, 34px);
+}
+.notre-magasin-p {
+  width: 100%;
+  background-color: white;
+  padding: 3rem 4.4rem;
+}
+.notre-magasin-description p {
+  /* margin: 4.4rem; */
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+  color: #6f6c6c;
+}
+.notre-magasin-description img {
+  transition: all 0.3s;
+}
+.notre-magasin-savoir-plus {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 4.4rem 0 4.4rem;
+  visibility: hidden;
+  transition: transform 0.2s;
+}
+.notre-magasin-savoir-plus span {
+  font: normal normal medium 1.6rem/3.1rem Helvetica, sans-serif;
+  text-transform: uppercase;
+  color: #7daf3f;
+}
+.notre-magasin-savoir-plus svg .a {
+  fill: white;
+}
+.notre-magasin-savoir-plus svg .b {
+  fill: #7daf3f;
+}
+.notre-magasin-image {
+  min-width: 74.3rem;
+  overflow: hidden;
+}
+.notre-magasin-image img,
+.notre-magasin-p {
+  transition: transform 0.3s;
+}
+.notre-magasin:hover .notre-magasin-image img {
+  transform: scale(1.13);
+}
+.notre-magasin:hover .notre-magasin-p {
+  transform: translateY(-7rem);
+}
+.notre-magasin:hover .notre-magasin-savoir-plus {
+  transform: translateY(-4rem);
+  visibility: visible;
+}
+.notre-magasin:hover .notre-magasin-description img {
+  transform: translateY(-4rem);
+}

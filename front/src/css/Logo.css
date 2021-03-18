@@ -1,0 +1,26 @@
+.logo {
+  font-weight: 1000;
+  /* padding-left: 2rem; */
+  font-size: 2.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo-part-one {
+  color: #7daf3f;
+}
+.logo-part-two {
+  color: #4d302b;
+  display: flex;
+  align-items: center;
+}
+/* styling the E in the logo */
+.logo-part-two svg {
+  width: 1.1rem;
+}
+.logo-part-two path.a {
+  fill: #7daf3f;
+}
+.logo-part-two svg .b {
+  fill: #4d302b;
+}

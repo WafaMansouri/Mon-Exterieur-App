@@ -1,0 +1,54 @@
+.nav-bar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.nav-bar li {
+  border: 1px solid #e2e2e2;
+  height: 100%;
+  background-color: white;
+}
+.nav-bar li,
+.nav-bar li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-bar input {
+  border: none;
+  height: 100%;
+  width: 100%;
+}
+ul.primary-nav {
+  height: 7rem;
+  display: grid;
+  grid-template-columns: 30% 30.5% 14% auto;
+}
+
+li.configurateur {
+  padding-right: 10rem;
+}
+li.configurateur a {
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  background-color: #7daf3f;
+}
+
+li.configurateur a:hover {
+  background-color: #4d302b;
+}
+
+li.configurateur a {
+  color: white;
+}
+ul.secondary-nav {
+  height: 5rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}

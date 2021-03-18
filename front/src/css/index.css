@@ -1,0 +1,25 @@
+*,
+*::after,
+*::before {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%; /*Therefore 1rem=10px*/
+}
+body {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: 400;
+  font-family: "PT Sans", sans-serif;
+  font-size: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+li {
+  list-style: none;
+}

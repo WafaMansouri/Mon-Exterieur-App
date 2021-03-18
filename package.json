@@ -1,0 +1,20 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "concurrently \"nodemon server.js\" \"cd front && npm start\"",
+    "build": "cd front && npm run build",
+    "heroku-postbuild": "cd front && npm install && npm run build"
+  },
+  "author": "Wafa Mansouri",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "concurrently": "^6.0.0"
+  }
+}
