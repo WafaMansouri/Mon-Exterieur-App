@@ -13,13 +13,13 @@
   overflow: hidden;
 }
 .footer-logo {
-  width: 40rem;
+  width: 50rem;
   padding: 0;
-  transform: scale(1.8) translate(-35px, 20px);
+  transform: scale(1.5) translate(-15px, 17px);
 }
 .footer-description {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 .footer-description h3 {
   font-size: 1.8rem;
@@ -31,4 +31,11 @@
   line-height: 1.8rem;
   color: #6f6c6c;
   margin-bottom: 2rem;
+}
+@media (max-width: 1200px) {
+  .footer-logo {
+    width: 50rem;
+    padding: 0;
+    transform: scale(1.2) translate(-15px, -2px);
+  }
 }

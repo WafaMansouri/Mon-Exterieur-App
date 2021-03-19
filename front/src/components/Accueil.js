@@ -11,19 +11,24 @@ const Accueil = () => {
           alt="terrase"
         />
         <div className="header-home-images">
-          <a href="">
+          <a href="#">
+            <span>Lame composite</span>
             <img src="/images/lame-composite.png" alt="lame composite" />
           </a>
-          <a href="">
+          <a href="#">
+            <span>Lame en bois</span>
             <img src="/images/lame-bois.png" alt="lame en bois" />
           </a>
-          <a href="">
+          <a href="#">
+            <span>Panneau bois</span>
             <img src="/images/panneau-bois.png" alt="panneau bois" />
           </a>
-          <a href="">
+          <a href="#">
+            <span>Grille rigide</span>
             <img src="/images/grille-rigide.png" alt="grille rigide" />
           </a>
-          <a href="">
+          <a href="#">
+            <span>Gabion</span>
             <img src="/images/gabion.png" alt="gabion" />
           </a>
         </div>

@@ -23,3 +23,13 @@ a {
 li {
   list-style: none;
 }
+@media (max-width: 1080px) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media (max-width: 884px) {
+  html {
+    font-size: 50%;
+  }
+}

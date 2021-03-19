@@ -21,18 +21,31 @@
   display: flex;
   justify-content: space-between;
 }
+.header-home-images a {
+  position: relative;
+}
 .header-home-images img {
   width: 20rem;
 }
+.header-home-images span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(6rem, 6rem);
+  color: white;
+  width: 40%;
+  text-align: center;
+}
+
 .config-espace {
   background-color: #4d302b;
   color: white;
   width: 80%;
   height: 17rem;
-  margin: 20px auto;
+  margin: 2rem auto;
   display: grid;
   grid-template-columns: 11rem 11.4rem auto 10rem;
-  padding: 41px;
+  padding: 4.1rem;
   overflow: hidden;
 }
 .config-espace img {
@@ -60,7 +73,7 @@
   border: none;
 }
 .nos-realisations-section {
-  margin: 10rem 0 0 10rem;
+  margin: 12rem 0 12rem 10rem;
   height: 56rem;
   position: relative;
   background-color: #f8f8f8;
@@ -112,7 +125,6 @@
 }
 .nos-realisations-description p {
   height: 18rem;
-  /* width: 35.9rem; */
   overflow: hidden;
 }
 .nos-realisations-description h2 {
@@ -137,7 +149,6 @@
   cursor: pointer;
 }
 .carousel {
-  /* visibility: hidden; */
   display: none;
   transition: all 0.5s ease;
 }
@@ -161,17 +172,17 @@ section.notice-installation {
   display: grid;
   grid-template-columns: 35.2rem 35.2rem 35.2rem;
   grid-gap: 10px;
-  margin: 20px auto;
+  margin: 12rem auto;
 }
 section.notice-installation div:first-child {
   background-color: #4d302b;
-  padding: 60px 34px;
+  padding: 6rem 3.4rem;
   height: 35.2rem;
-  /* overflow: hidden; */
 }
 section.notice-installation div:first-child h1 {
   color: #7daf3f;
-  font: normal normal bold 33px/43px "PT Sans";
+  font-size: 3.3rem;
+  line-height: 4.3rem;
   margin-bottom: 3.55rem;
   transition: transform 0.3s;
 }
@@ -225,9 +236,11 @@ section.notice-installation img {
 }
 section.notre-magasin {
   display: flex;
+  overflow: hidden;
 }
 section.notre-magasin h1 {
-  font: normal normal bold 33px/43px "PT Sans";
+  font-size: 3.3rem;
+  line-height: 4.3rem;
   margin-left: 3rem;
 }
 .notre-magasin-description {
@@ -290,4 +303,92 @@ section.notre-magasin h1 {
 }
 .notre-magasin:hover .notre-magasin-description img {
   transform: translateY(-4rem);
+}
+
+@media (max-width: 1200px) {
+  section.notice-installation {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .nos-realisations-image > div > img {
+    width: 74.8rem;
+  }
+  .notre-magasin-description img {
+    width: 53rem;
+  }
+  .header-home-images img {
+    width: 18rem;
+  }
+}
+@media (max-width: 1080px) {
+  section.notice-installation img {
+    height: 35.2rem;
+  }
+  .nos-realisations-description p {
+    height: 25rem;
+  }
+}
+
+@media (max-width: 974px) {
+  .nos-realisations-image > div > img {
+    width: 65.8rem;
+  }
+  .nos-realisations-box {
+    width: 41.4rem;
+    height: 31.5rem;
+    padding: 23px;
+  }
+  .nos-realisations-description h2 {
+    margin-bottom: 5px;
+  }
+  .nos-realisations-description p {
+    height: 20rem;
+  }
+  .nos-realisations-icon {
+    transform: translate(32rem, 16rem);
+  }
+  .nos-realisations-section {
+    height: 41rem;
+  }
+  section.notice-installation img {
+    height: 31.2rem;
+  }
+  section.notice-installation div:first-child {
+    padding: 20px 30px;
+    height: 31.2rem;
+  }
+  .notre-magasin-description img {
+    width: 42rem;
+  }
+  .header-home-images img {
+    width: 16rem;
+  }
+  .nos-realisations-box .arrows img {
+    margin: 0.5rem 0.5rem;
+    transform: scale(0.8);
+  }
+  .notre-magasin-image img {
+    width: 67rem;
+  }
+  section.notre-magasin h1 {
+    margin-left: -3rem;
+  }
+}
+
+@media (max-width: 758px) {
+  .config-espace {
+    padding: 2.1rem;
+  }
+  .nos-realisations-image > div > img {
+    width: 55.8rem;
+  }
+  .header-home-images img {
+    width: 13rem;
+  }
+  .config-espace h1 {
+    font-size: 3rem;
+  }
+  .config-espace > span {
+    font-size: 22rem;
+    transform: translate(-33px, 59px) rotate(-17deg);
+  }
 }
