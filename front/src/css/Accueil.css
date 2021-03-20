@@ -440,6 +440,10 @@ section.notre-magasin h1 {
   .notre-magasin-description img {
     width: 42rem;
   }
+  .config-espace > span {
+    font-size: 24rem;
+    transform: translate(-54px, 36px) rotate(-17deg);
+  }
 }
 
 @media (max-width: 758px) {
@@ -471,8 +475,8 @@ section.notre-magasin h1 {
     font-size: 2.6rem;
   }
   .config-espace > span {
-    font-size: 22rem;
-    transform: translate(-33px, 59px) rotate(-17deg);
+    font-size: 21rem;
+    transform: translate(-35px, 31px) rotate(-17deg);
   }
   .config-espace img.config-icon {
     width: 6rem;
@@ -577,6 +581,10 @@ section.notre-magasin h1 {
   .config-espace p {
     font-size: 1.5rem;
   }
+  .config-espace > span {
+    font-size: 17rem;
+    transform: translate(-22px, 30px) rotate(-16deg);
+  }
 }
 
 @media (max-width: 530px) {
@@ -622,6 +630,12 @@ section.notre-magasin h1 {
   .notre-magasin:hover .notre-magasin-image img {
     transform: scale(1);
   }
+  .notre-magasin-image img {
+    width: 47rem;
+  }
+  section.notre-magasin h1 {
+    transform: translate(-121px, 0px);
+  }
 }
 @media (max-width: 490px) {
   .header-home-images,
@@ -666,7 +680,7 @@ section.notre-magasin h1 {
     font-size: 1.2rem;
   }
   .notre-magasin-image img {
-    width: 44rem;
+    width: 42rem;
   }
   section.notre-magasin {
     height: 36rem;
@@ -675,7 +689,7 @@ section.notre-magasin h1 {
     transform: translate(-362px, 30px);
   }
   section.notre-magasin h1 {
-    transform: translate(-139px, 8px);
+    transform: translate(-145px, 8px);
     font-size: 2rem;
   }
   .nos-realisations-section {
@@ -688,5 +702,11 @@ section.notre-magasin h1 {
   }
   .nav-bar li.configurateur img {
     transform: scale(1) translateX(-5px);
+  }
+  .config-espace img.config-icon {
+    width: 4.5rem;
+  }
+  .config-espace {
+    grid-template-columns: 7rem 6rem auto 8rem;
   }
 }

@@ -260,6 +260,9 @@ ul.secondary-nav li:hover {
   li.configurateur {
     padding-right: 9rem;
   }
+  .contact-dropdown label {
+    line-height: 2rem;
+  }
   ul.secondary-nav {
     margin-left: 9rem;
     margin-right: 9rem;
@@ -304,6 +307,11 @@ ul.secondary-nav li:hover {
   .nav-bar li.configurateur a:hover .img2 {
     transform: scale(1) translateX(0rem);
   }
+  .contact-dropdown label,
+  .contact-dropdown input,
+  .contact-dropdown textarea {
+    margin: 0 0.8rem;
+  }
   .nav-bar .notre-magasin .img1 {
     margin-right: 1rem;
     width: 2rem;
@@ -314,6 +322,16 @@ ul.secondary-nav li:hover {
   }
   .nav-bar .notre-magasin:hover .img2 {
     transform: translateX(1rem);
+  }
+}
+@media (max-width: 674px) {
+  .secondary-nav-contact:hover .contact-dropdown {
+    width: 18rem;
+  }
+}
+@media (max-width: 674px) {
+  .contact-dropdown label {
+    line-height: 3rem;
   }
 }
 @media (max-width: 530px) {

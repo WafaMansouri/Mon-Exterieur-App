@@ -119,6 +119,12 @@ aside .boutique-aside-2 img.arrow {
   }
 }
 
+@media (max-width: 758px) {
+  .boutique-aside-2 img {
+    width: 5rem;
+  }
+}
+
 @media (max-width: 530px) {
   .boutique-header h1 {
     font-size: 3rem;
