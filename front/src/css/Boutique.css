@@ -122,6 +122,7 @@ aside .boutique-aside-2 img.arrow {
 @media (max-width: 530px) {
   .boutique-header h1 {
     font-size: 3rem;
+    margin-left: 8rem;
   }
   main.boutique-main {
     width: 87%;
@@ -133,5 +134,36 @@ aside .boutique-aside-2 img.arrow {
   }
   aside .boutique-aside-2 img.arrow {
     transform: scale(0.5);
+  }
+}
+@media (max-width: 450px) {
+  main.boutique-main {
+    width: 95%;
+  }
+  aside.boutique-aside,
+  aside .boutique-aside-1,
+  aside .boutique-aside-2 {
+    width: 14rem;
+  }
+  aside .boutique-aside-1 {
+    height: 27.9rem;
+  }
+  aside .boutique-aside-1 h2 {
+    line-height: 1.2rem;
+    height: 5rem;
+    font-size: 1.5rem;
+    padding: 2rem 1.3rem;
+  }
+  aside .boutique-aside-1 li {
+    border: 1px solid #f1eeee;
+    height: 4.5rem;
+    padding: 1.3rem 1rem;
+  }
+  aside.boutique-aside {
+    max-height: 75rem;
+  }
+  .boutique-header h1 {
+    font-size: 3rem;
+    margin-left: 3rem;
   }
 }

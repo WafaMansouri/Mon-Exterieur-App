@@ -327,3 +327,8 @@ ul.secondary-nav li:hover {
     margin-right: 0rem;
   }
 }
+@media (max-width: 450px) {
+  .primary-nav .logo {
+    transform: scale(0.8) translateX(0);
+  }
+}
