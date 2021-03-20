@@ -1,10 +1,11 @@
 .product {
   width: 26rem;
   border: 1px solid #e2e2e2;
-  margin: 2rem 0;
+  margin: 0 0 4rem;
   background-color: white;
   overflow: hidden;
 }
+
 .product img {
   width: 26rem;
   height: 25.3rem;
@@ -68,4 +69,37 @@
 }
 .product:hover img {
   transform: translateY(-4rem);
+}
+@media (max-width: 974px) {
+  .product {
+    width: 22rem;
+  }
+  .product img {
+    width: 22rem;
+    height: 18.3rem;
+    transition: all 0.3s;
+  }
+  .product span.price {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 758px) {
+  .product {
+    width: 20rem;
+  }
+  .product img {
+    width: 20rem;
+    height: 15.3rem;
+  }
+}
+
+@media (max-width: 490px) {
+  .product {
+    width: 16rem;
+  }
+  .product img {
+    width: 16rem;
+    height: 13rem;
+  }
 }

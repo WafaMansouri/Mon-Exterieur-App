@@ -1,8 +1,9 @@
 #boutique {
   position: absolute;
   width: 100%;
-  /* top: 7rem; */
   background-color: #f8f8f8;
+  /* display: flex;
+  justify-content: space-between; */
 }
 .boutique-header {
   height: 24rem;
@@ -35,8 +36,14 @@ main.boutique-main {
   margin: 2rem auto;
   display: flex;
 }
+aside.boutique-aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-height: 89rem;
+}
 aside .boutique-aside-1 {
-  min-width: 26rem;
+  width: 26rem;
   height: 36.9rem;
   border: 1px solid #e2e2e2;
   background-color: white;
@@ -56,7 +63,7 @@ aside .boutique-aside-1 h2 {
 }
 
 aside .boutique-aside-2 {
-  min-width: 26rem;
+  width: 26rem;
   height: 47.8rem;
   background-image: linear-gradient(
     to bottom,
@@ -84,4 +91,47 @@ aside .boutique-aside-2 img.arrow {
   position: absolute;
   bottom: 2rem;
   right: 2rem;
+}
+@media (max-width: 974px) {
+  main.boutique-main {
+    width: 83%;
+  }
+  aside.boutique-aside {
+    max-height: 79rem;
+    width: 22rem;
+  }
+  aside .boutique-aside-1 li {
+    border: 1px solid #f1eeee;
+    height: 5rem;
+    padding: 1.5rem 3rem;
+  }
+  aside .boutique-aside-1 h2 {
+    height: 6rem;
+    font-size: 1.9rem;
+  }
+  aside .boutique-aside-1 {
+    width: 22rem;
+    height: 30.9rem;
+  }
+  aside .boutique-aside-2 {
+    width: 22rem;
+    height: 44.8rem;
+  }
+}
+
+@media (max-width: 530px) {
+  .boutique-header h1 {
+    font-size: 3rem;
+  }
+  main.boutique-main {
+    width: 87%;
+  }
+  aside.boutique-aside,
+  aside .boutique-aside-1,
+  aside .boutique-aside-2 {
+    width: 18rem;
+  }
+  aside .boutique-aside-2 img.arrow {
+    transform: scale(0.5);
+  }
 }

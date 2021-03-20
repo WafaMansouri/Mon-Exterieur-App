@@ -631,4 +631,62 @@ section.notre-magasin h1 {
 }
 
 @media (max-width: 450px) {
+  .nos-realisations-image {
+    top: 4rem;
+  }
+  .nos-realisations-box {
+    width: 31rem;
+    padding: 14px;
+    position: absolute;
+    top: 10rem;
+  }
+  .nos-realisations-box .arrows img {
+    transform: scale(0.55);
+  }
+  section.notice-installation img:not([src="/icons/arrow-left-line.svg"]),
+  section.notice-installation div:first-child {
+    height: 16rem;
+  }
+  section.notice-installation div:first-child {
+    padding: 5px 5px;
+  }
+  section.notice-installation div:first-child h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  section.notice-installation div:first-child p {
+    line-height: 1.8rem;
+    font-size: 1.3rem;
+  }
+  .notice-installation-savoir-plus {
+    margin-top: 0.5rem;
+  }
+  .notice-installation-savoir-plus span,
+  .notre-magasin-savoir-plus span {
+    font-size: 1.2rem;
+  }
+  .notre-magasin-image img {
+    width: 44rem;
+  }
+  section.notre-magasin {
+    height: 36rem;
+  }
+  .notre-magasin-description {
+    transform: translate(-362px, 30px);
+  }
+  section.notre-magasin h1 {
+    transform: translate(-139px, 8px);
+    font-size: 2rem;
+  }
+  .nos-realisations-section {
+    margin: 3rem 0 4rem 4rem;
+    height: 40rem;
+  }
+  .nav-bar li.configurateur .img2,
+  .nav-bar .notre-magasin .img2 {
+    display: none;
+  }
+  .nav-bar li.configurateur img {
+    transform: scale(1) translateX(-5px);
+  }
 }

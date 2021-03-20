@@ -26,6 +26,11 @@
   line-height: 2.3rem;
   margin-bottom: 2rem;
 }
+.footer-description h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
 .footer-description li {
   font-size: 1.4rem;
   line-height: 1.8rem;
@@ -39,9 +44,39 @@
     transform: scale(1.2) translate(-15px, -2px);
   }
 }
+@media (max-width: 1080px) {
+  .footer {
+    margin-top: 10rem;
+  }
+}
 
 @media (max-width: 974px) {
   .footer-main {
     border-top: 0.6rem solid #7daf3f;
+  }
+}
+
+@media (max-width: 758px) {
+  .footer-logo {
+    width: 40rem;
+    transform: scale(1) translate(-9px, -23px);
+  }
+  .footer-description p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .footer {
+    margin-top: 8rem;
+  }
+  .footer-description p {
+    font-size: 1.4rem;
+  }
+  .footer-description h3 {
+    font-size: 1.6rem;
+  }
+  .footer-logo {
+    transform: scale(0.8) translate(-7px, -44px);
   }
 }
