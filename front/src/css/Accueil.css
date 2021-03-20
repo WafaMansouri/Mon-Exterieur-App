@@ -645,6 +645,9 @@ section.notre-magasin h1 {
 }
 
 @media (max-width: 450px) {
+  .header-home-images img {
+    width: 10.5rem;
+  }
   .nos-realisations-image {
     top: 4rem;
   }
@@ -680,7 +683,7 @@ section.notre-magasin h1 {
     font-size: 1.2rem;
   }
   .notre-magasin-image img {
-    width: 42rem;
+    width: 39rem;
   }
   section.notre-magasin {
     height: 36rem;
@@ -689,7 +692,7 @@ section.notre-magasin h1 {
     transform: translate(-362px, 30px);
   }
   section.notre-magasin h1 {
-    transform: translate(-145px, 8px);
+    transform: translate(-172px, 8px);
     font-size: 2rem;
   }
   .nos-realisations-section {
