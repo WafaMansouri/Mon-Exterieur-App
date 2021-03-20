@@ -3,6 +3,15 @@
   width: 100%;
   top: 7rem;
 }
+
+#accueil main {
+  position: absolute;
+  top: 46.5rem;
+  background-color: #f8f8f8;
+  width: 100%;
+  border: none;
+}
+/* Styling header home */
 .header-home {
   position: fixed;
   top: 7rem;
@@ -17,26 +26,28 @@
 }
 .header-home-images {
   width: 80%;
-  margin: 20px auto;
+  margin: 2rem auto;
   display: flex;
   justify-content: space-between;
 }
 .header-home-images a {
   position: relative;
+  overflow: hidden;
 }
 .header-home-images img {
   width: 20rem;
 }
 .header-home-images span {
   position: absolute;
-  top: 0;
-  left: 0;
-  transform: translate(6rem, 6rem);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: white;
   width: 40%;
   text-align: center;
 }
 
+/* Styling espace configurateur */
 .config-espace {
   background-color: #4d302b;
   color: white;
@@ -48,8 +59,20 @@
   padding: 4.1rem;
   overflow: hidden;
 }
+/* .config-espace::after {
+  content: "hello";
+  background-color: rgb(125, 175, 63);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  display: block;
+  width: 100%;
+} */
+
 .config-espace img {
-  margin: 20px auto;
+  margin: 2rem auto;
+  transition: all 0.2s;
 }
 .config-espace img.config-icon {
   width: 7rem;
@@ -65,13 +88,19 @@
   color: #7daf3f;
   transform: translate(-78px, 33px) rotate(-17deg);
 }
-#accueil main {
-  position: absolute;
-  top: 46.5rem;
-  background-color: #f8f8f8;
-  width: 100%;
-  border: none;
+
+.config-espace:hover {
+  background-color: #7daf3f;
 }
+.config-espace:hover > span {
+  color: #4d302b;
+}
+.config-espace:hover img[src="/icons/arrow-left-line.svg"] {
+  transform: translateX(3rem);
+}
+
+/* Styling nos réalisations */
+
 .nos-realisations-section {
   margin: 12rem 0 12rem 10rem;
   height: 56rem;
@@ -86,7 +115,7 @@
   border: 1px solid #e2e2e2;
   width: 44.4rem;
   height: 42.5rem;
-  padding: 37px;
+  padding: 3.7rem;
   position: relative;
   z-index: 14;
   background-color: white;
@@ -105,13 +134,18 @@
   width: 90.8rem;
   transition: all 0.3s ease-out;
 }
-.nos-realisations-icon {
+.nos-realisations-icon,
+.notice-installation-icon {
   position: absolute;
-  top: 0;
-  left: 0;
-  transform: translate(46rem, 25rem);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   opacity: 0;
   /* transition: all 0.3s ease-in; */
+}
+.nos-realisations-icon img,
+.notice-installation-icon img {
+  width: 4.2rem;
 }
 .nos-realisations-section:hover p,
 .nos-realisations-section:hover h2 {
@@ -129,7 +163,7 @@
 }
 .nos-realisations-description h2 {
   color: #1f1f1f;
-  margin-bottom: 30px;
+  margin-bottom: 3rem;
 }
 .nos-realisations-description p {
   color: #504e4e;
@@ -157,21 +191,21 @@
   height: 9px;
   width: 9px;
   margin: 0 2px;
-  /* background-color: #bbb; */
   border-radius: 50%;
   border: 1px solid #b7b7b7;
   display: inline-block;
-  /* transition: background-color 0.6s ease; */
 }
 .nos-realisations-section:hover .carousel {
   display: block;
   /* visibility: visible; */
 }
+
+/* Styling notice installation */
 section.notice-installation {
   width: 85%;
   display: grid;
   grid-template-columns: 35.2rem 35.2rem 35.2rem;
-  grid-gap: 10px;
+  grid-gap: 1.3rem;
   margin: 12rem auto;
 }
 section.notice-installation div:first-child {
@@ -187,7 +221,8 @@ section.notice-installation div:first-child h1 {
   transition: transform 0.3s;
 }
 section.notice-installation div:first-child p {
-  font: normal normal normal 14px/25px "PT Sans";
+  font-size: 1.4rem;
+  line-height: 2.5rem;
   transition: transform 0.3s;
 }
 section.notice-installation div:first-child {
@@ -196,12 +231,14 @@ section.notice-installation div:first-child {
 .notice-installation-savoir-plus {
   display: flex;
   justify-content: space-between;
-  margin-top: 70px;
+  margin-top: 7rem;
   transition: transform 0.3s;
   visibility: hidden;
 }
 .notice-installation-savoir-plus span {
-  font: normal normal medium 1.6rem/3.1rem Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
+  font-size: 1.6rem;
+  line-height: 3.1rem;
   text-transform: uppercase;
 }
 .notice-installation-savoir-plus img {
@@ -228,12 +265,22 @@ section.notice-installation
 section.notice-installation div {
   overflow: hidden;
 }
-section.notice-installation img:not([src="/icons/arrow-left-line.svg"]):hover {
+.notice-installation-img {
+  position: relative;
+  overflow: hidden;
+}
+.notice-installation-img:hover img {
   transform: scale(1.1);
+}
+.notice-installation-img:hover .notice-installation-icon {
+  opacity: 1;
 }
 section.notice-installation img {
   transition: all 0.2s;
 }
+
+/* Styling notre magasin sectio */
+
 section.notre-magasin {
   display: flex;
   overflow: hidden;
@@ -273,7 +320,9 @@ section.notre-magasin h1 {
   transition: transform 0.2s;
 }
 .notre-magasin-savoir-plus span {
-  font: normal normal medium 1.6rem/3.1rem Helvetica, sans-serif;
+  font-size: 1.6rem;
+  line-height: 3.1rem;
+  font-family: Helvetica, sans-serif;
   text-transform: uppercase;
   color: #7daf3f;
 }
@@ -318,9 +367,12 @@ section.notre-magasin h1 {
   .header-home-images img {
     width: 18rem;
   }
+  .config-espace {
+    margin: 1rem auto;
+  }
 }
 @media (max-width: 1080px) {
-  section.notice-installation img {
+  section.notice-installation img:not([src="/icons/arrow-left-line.svg"]) {
     height: 35.2rem;
   }
   .nos-realisations-description p {
@@ -329,6 +381,16 @@ section.notre-magasin h1 {
 }
 
 @media (max-width: 974px) {
+  .header-home {
+    top: 6rem;
+  }
+  #accueil main {
+    top: 43.5rem;
+  }
+  .nos-realisations-section {
+    height: 41rem;
+    margin: 8rem 0 8rem 8rem;
+  }
   .nos-realisations-image > div > img {
     width: 65.8rem;
   }
@@ -343,24 +405,24 @@ section.notre-magasin h1 {
   .nos-realisations-description p {
     height: 20rem;
   }
-  .nos-realisations-icon {
-    transform: translate(32rem, 16rem);
+  section.notice-installation {
+    margin: 8rem auto;
   }
-  .nos-realisations-section {
-    height: 41rem;
-  }
-  section.notice-installation img {
+  section.notice-installation img:not([src="/icons/arrow-left-line.svg"]) {
     height: 31.2rem;
   }
   section.notice-installation div:first-child {
     padding: 20px 30px;
     height: 31.2rem;
   }
-  .notre-magasin-description img {
-    width: 42rem;
+  section.notice-installation div:first-child h1 {
+    margin-bottom: 2.5rem;
+  }
+  .notice-installation-savoir-plus {
+    margin-top: 5rem;
   }
   .header-home-images img {
-    width: 16rem;
+    width: 15rem;
   }
   .nos-realisations-box .arrows img {
     margin: 0.5rem 0.5rem;
@@ -372,23 +434,201 @@ section.notre-magasin h1 {
   section.notre-magasin h1 {
     margin-left: -3rem;
   }
+  .notre-magasin-description {
+    height: 31.5rem;
+  }
+  .notre-magasin-description img {
+    width: 42rem;
+  }
 }
 
 @media (max-width: 758px) {
-  .config-espace {
-    padding: 2.1rem;
+  .header-home-main-image {
+    height: 25rem;
+  }
+  #accueil main {
+    top: 38rem;
   }
   .nos-realisations-image > div > img {
     width: 55.8rem;
   }
+  .nos-realisations-box .arrows img {
+    margin: 0;
+  }
+  .carousel .dot {
+    height: 8px;
+    width: 8px;
+  }
   .header-home-images img {
     width: 13rem;
   }
+  .config-espace {
+    grid-template-columns: 9rem 9rem auto 9rem;
+    padding: 2rem;
+    height: 13rem;
+  }
   .config-espace h1 {
-    font-size: 3rem;
+    font-size: 2.6rem;
   }
   .config-espace > span {
     font-size: 22rem;
     transform: translate(-33px, 59px) rotate(-17deg);
   }
+  .config-espace img.config-icon {
+    width: 6rem;
+    margin-left: 0;
+  }
+  .notre-magasin-image {
+    min-width: 67.3rem;
+  }
+  .notre-magasin-image img {
+    width: 60rem;
+  }
+  .notre-magasin-description {
+    height: 27.5rem;
+    transform: translate(-169px, 19px);
+  }
+  .notre-magasin-p {
+    padding: 1.5rem 2.4rem;
+  }
+  .notre-magasin-savoir-plus {
+    margin: 0 2.4rem 0 2.4rem;
+  }
+  section.notice-installation img:not([src="/icons/arrow-left-line.svg"]) {
+    height: 27rem;
+  }
+  section.notice-installation div:first-child {
+    padding: 24px 21px;
+    height: 27rem;
+  }
+  section.notice-installation div:first-child h1 {
+    font-size: 2.5rem;
+    line-height: 3.3rem;
+  }
+  section.notice-installation div:first-child p {
+    line-height: 2rem;
+  }
+  .notice-installation-savoir-plus span,
+  .notre-magasin-savoir-plus span {
+    font-size: 1.4rem;
+  }
+  .notice-installation-savoir-plus img,
+  .notre-magasin-savoir-plus svg {
+    width: 2rem;
+  }
+  .nos-realisations-icon img,
+  .notice-installation-icon img {
+    width: 3.2rem;
+  }
+  section.notre-magasin h1 {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+  }
+}
+
+@media (max-width: 674px) {
+  .header-home-images img {
+    width: 11.5rem;
+  }
+  .nos-realisations-image > div > img {
+    width: 47rem;
+  }
+  .nos-realisations-box {
+    width: 35.4rem;
+    height: 31.5rem;
+    padding: 23px;
+  }
+  .nos-realisations-description p {
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+  }
+  .nos-realisations-section {
+    margin: 8rem 0 4rem 8rem;
+  }
+  section.notice-installation {
+    margin: 4rem auto 8rem;
+  }
+  .notre-magasin-image img {
+    width: 54rem;
+  }
+  .notre-magasin-description {
+    transform: translate(-270px, 19px);
+  }
+  section.notre-magasin h1 {
+    transform: translate(-59px, 0px);
+  }
+  .notice-installation-savoir-plus {
+    margin-top: 3rem;
+  }
+  .config-espace {
+    margin: 0rem auto;
+    height: 11rem;
+  }
+  .config-espace {
+    grid-template-columns: 7rem 8rem auto 8rem;
+    padding: 1rem;
+  }
+  .config-espace img.config-icon {
+    width: 5rem;
+  }
+  .config-espace h1 {
+    font-size: 2.2rem;
+  }
+  .config-espace p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 530px) {
+  .header-home-images,
+  .config-espace {
+    width: 87%;
+  }
+  .nos-realisations-section {
+    margin: 5rem 0 4rem 5rem;
+    height: 40rem;
+  }
+  .nos-realisations-image > div > img {
+    width: 40rem;
+  }
+  section.notice-installation {
+    margin: 4rem auto 5rem;
+  }
+  section.notice-installation img:not([src="/icons/arrow-left-line.svg"]) {
+    height: 22rem;
+  }
+  section.notice-installation div:first-child {
+    padding: 12px 10px;
+    height: 22rem;
+  }
+  section.notice-installation div:first-child h1 {
+    margin-bottom: 1.5rem;
+  }
+  .notice-installation-savoir-plus {
+    margin-top: 2rem;
+    visibility: visible;
+  }
+  section.notice-installation div:first-child h1 {
+    font-size: 2rem;
+    line-height: 2.7rem;
+  }
+  section.notice-installation div:first-child:hover h1,
+  section.notice-installation div:first-child:hover p,
+  section.notice-installation
+    div:first-child:hover
+    .notice-installation-savoir-plus {
+    transform: translateY(0rem);
+  }
+  .notre-magasin:hover .notre-magasin-image img {
+    transform: scale(1);
+  }
+}
+@media (max-width: 490px) {
+  .header-home-images,
+  .config-espace {
+    width: 95%;
+  }
+}
+
+@media (max-width: 450px) {
 }

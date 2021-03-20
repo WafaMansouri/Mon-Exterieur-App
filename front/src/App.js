@@ -5,6 +5,7 @@ import "./css/Footer.css";
 import "./css/Accueil.css";
 import "./css/Boutique.css";
 import "./css/Product.css";
+import "./css/animations.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";

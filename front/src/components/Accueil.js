@@ -50,6 +50,7 @@ const Accueil = () => {
           </div>
           <img src="/icons/arrow-left-line.svg" alt="arrow left icon" />
         </div>
+
         <section className="nos-realisations-section">
           <div className="nos-realisation-text">
             <h1>Nos réalisations</h1>
@@ -96,6 +97,7 @@ const Accueil = () => {
             </div>
           </div>
         </section>
+
         <section className="notice-installation">
           <div>
             <h1>Notice & Installation</h1>
@@ -108,21 +110,36 @@ const Accueil = () => {
               <img src="/icons/arrow-left-line.svg" alt="arrow let icon" />
             </div>
           </div>
-          <div>
+          <div className="notice-installation-img">
             <img src="/images/notice1.png" alt="" />
+            <div className="notice-installation-icon">
+              <img src="/icons/E.svg" alt="E icon" />
+            </div>
           </div>
-          <div>
+          <divv className="notice-installation-img">
             <img src="/images/notice2.png" alt="" />
-          </div>
-          <div>
+            <div className="notice-installation-icon">
+              <img src="/icons/E.svg" alt="E icon" />
+            </div>
+          </divv>
+          <divv className="notice-installation-img">
             <img src="/images/notice3.png" alt="" />
-          </div>
-          <div>
+            <div className="notice-installation-icon">
+              <img src="/icons/E.svg" alt="E icon" />
+            </div>
+          </divv>
+          <divv className="notice-installation-img">
             <img src="/images/notice4.png" alt="" />
-          </div>
-          <div>
+            <div className="notice-installation-icon">
+              <img src="/icons/E.svg" alt="E icon" />
+            </div>
+          </divv>
+          <divv className="notice-installation-img">
             <img src="/images/notice5.png" alt="" />
-          </div>
+            <div className="notice-installation-icon">
+              <img src="/icons/E.svg" alt="E icon" />
+            </div>
+          </divv>
         </section>
 
         <section className="notre-magasin">

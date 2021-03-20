@@ -39,3 +39,9 @@
     transform: scale(1.2) translate(-15px, -2px);
   }
 }
+
+@media (max-width: 974px) {
+  .footer-main {
+    border-top: 0.6rem solid #7daf3f;
+  }
+}
